@@ -242,6 +242,33 @@ code {
             }
         }
     }
+    .quote-with-portrait {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 4em;
+        padding-top: 2em;
+        border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+        .profile-picture {
+            width: 25%;
+            flex-shrink: 0;
+            float: none;
+            margin: 0;
+        }
+        blockquote {
+            flex: 1;
+            margin: 0;
+            padding: 0;
+            border-left: none;
+            font-size: 0.9em;
+            opacity: 0.85;
+        }
+        @media (max-width: $small-width) {
+            flex-direction: column;
+            align-items: flex-start;
+            .profile-picture { width: 40%; }
+        }
+    }
     .hero-banner {
         display: block;
         width: 100%;
