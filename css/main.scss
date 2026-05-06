@@ -64,22 +64,32 @@ code {
 // Navbar
 
 .navbar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 30px 0 20px 0;
+
     ul {
-        display: inline-block;
+        order: 3;
+        display: flex;
         margin: 0;
-        padding: 5px 0 5px 0;
-        margin-left: 20px;
+        padding: 0;
     }
     li {
         list-style-type: none;
-        margin: 0 5px 0 10px;
+        margin: 0 5px;
     }
-
-    padding: 30px 0 20px 0;
     .site-title{
+        order: 1;
         font-size: inherit;
         color: #b9a0ff;
         display: inline-block;
+        margin-left: 5px;
+    }
+    hr {
+        order: 2;
+        flex: 1;
+        margin: 0;
     }
 }
 
@@ -149,34 +159,26 @@ code {
     .container {
         max-width: 83%;
     }
-    .navbar{
-        ul{
-            margin-top: 5px;
-        }
-    }
 }
 
 @media (max-width: 500px) {
 	.navbar {
-		text-align: center;
         padding: 50px 0px 0px 0px;
         ul{
-            padding: 10px 0 10px 0;
+            padding: 0;
             margin: 0;
-            display: block;
-            float: none;
-            text-align: center;
-            width: 100%;
+            display: flex;
         }
         li{
-            margin: 0;
+            margin: 0 5px;
         }
         .pull-left{
             float: none;
         }
         .site-title{
-            width: 100%;
+            width: auto;
             float: none;
+            margin-left: 5px;
         }
 	}
 }
