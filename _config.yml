@@ -21,6 +21,7 @@ exclude:
  - AGENTS.md
  - .DS_Store
  - about.md
+ - _archive
 
 navbar:
  - name: "伝える"

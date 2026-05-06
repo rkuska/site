@@ -1,4 +1,6 @@
 _site/
+.DS_Store
+AGENTS.md
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
