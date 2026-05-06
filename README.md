@@ -1,33 +1,25 @@
-# Parchment
-A clean, single column blog template built for jekyll
+# robert.kuska.xyz
+
+Personal Jekyll site for https://robert.kuska.xyz.
 
 ## Building Locally
-* Clone the repository
-* Run `bundle install`
-* Run `bundle exec jekyll serve`
-* Visit browser at `http://127.0.0.1:4000/parchment/`
 
-## Usage
+Use the Ruby version from `.ruby-version`, then run:
 
-* To use this as your GitHub Page, fork this repository, and
-  rename it to `<username>.github.io`. Your site will be live
-  at `https://<username>.github.io/parchment-jekyll`.
+```sh
+bundle install
+bundle exec jekyll serve
+```
 
-* You can customise variables in `_config.yml` and `css/*` files.
+Open http://127.0.0.1:4000/.
 
-* You can add markdown files, say `foo.md` in the root directory
-  of the repository. It will then be accessible like
-  `your.website.com/foo`.
+## Site Structure
 
-* To add posts, add your posts in the `_posts` directory. Follow
-  the naming convention `%yyyy-%mm-%dd-your-title-here.md`.
-
-* To add a profile picture, use class `profile-picture` around
-  the image.
-
-## Contributing
-Pull requests are welcome. For major changes, please open an
-issue first to discuss what you would like to change.
+* `/` is the About page.
+* `/blog/` lists public blog posts.
+* `/blog/tags/` lists tags for public blog posts.
+* Individual post URLs are generated under `/blog/`.
+* Posts with `private: true` are not shown in blog or tag listings.
 
 ## Credits
 Parchment is inspired from the resume theme

@@ -12,13 +12,18 @@ footer_only_homepage: true
 profile-picture: assets/profile.png
 favicon_location: assets/favicon.ico
 
-permalink: /:year-:month-:day-:title/
+permalink: /blog/:year-:month-:day-:title/
 sass:
     style: compressed
     sass_dir: css
 
+exclude:
+ - AGENTS.md
+ - .DS_Store
+ - about.md
+
 navbar:
- - name: "About"
-   link: "about"
+ - name: "伝える"
+   link: "/blog/"
  #- name: "Resume"
    #absolute-link: "https://rahulbothra.com/cv.pdf"

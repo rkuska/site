@@ -7,7 +7,8 @@ layout: default
         {% if page.tags.first == tag %}
             <b>[</b>
         {% endif %}
-        <a href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
+        {% assign tag_url = '/blog/tags/#' | append: tag %}
+        <a href="{{ tag_url | relative_url }}" title="{{ tag }}">{{ tag }}</a>
         {% if page.tags.last == tag %}
             <b>]</b>
         {% else %}
