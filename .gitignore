@@ -8,3 +8,12 @@ AGENTS.md
 .bundle/
 vendor/
 .ruby-version
+_cv/*.aux
+_cv/*.fdb_latexmk
+_cv/*.fls
+_cv/*.log
+_cv/*.out
+_cv/*.pdf
+_cv/*.xdv
+_cv/missfont.log
+assets/cv/robert-kuska-cv.pdf

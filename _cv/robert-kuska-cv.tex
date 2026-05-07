@@ -1,0 +1,115 @@
+\documentclass[letterpaper,11pt]{article}
+
+\def\theme{sitegreen}
+\usepackage{simplecv}
+
+\begin{document}
+
+\cvheading{Robert Kuska}{Software Engineer}{
+  Brno, Czech Republic\\
+  \email{robert@kuska.xyz}\\
+  \website{robert.kuska.xyz}
+}
+
+\cvsection{Skills}
+
+\cvtext{
+Golang, Python, Ruby, PostgreSQL, Cassandra, ScyllaDB, backend engineering,
+monitoring, leadership, software architecture, microservices, Docker, Vim,
+Linux
+}
+
+\cvsection{Experience}
+
+\cvjob
+    {Apropos}
+    {July 2024 -- Present}
+    {Founding Engineer}
+    {Remote, HQ in New York City, USA}
+  {
+    Created the backend around Python and Go, including asynchronous data
+    pipelines communicating over Google Cloud Pub/Sub. Worked on scraping,
+    data processing, LLM-backed workflows, and rapid prototyping.
+  }
+
+\cvjob
+    {Qonto}
+    {January 2020 -- July 2024}
+    {Staff Software Engineer}
+    {Remote, HQ in Paris, France}
+  {
+    Worked on the Ledger team, focused on bookkeeping operations and
+    resource-intensive transaction processing. Helped migrate synchronous
+    HTTP flows to an event-driven architecture using Kafka.
+    \cvparagraph{
+    Led the internal Golang coding academy, mentoring engineers joining Go
+    backend teams. Drove scalability work through batch optimization,
+    database load reduction, profiling, benchmarking, and capacity planning.
+    }
+  }
+
+\cvjob
+    {Kiwi.com}
+    {November 2015 -- December 2019}
+    {Technical Lead}
+    {Brno, Czech Republic}
+  {
+    Started as a Senior Software Engineer in the Booking tribe, working on
+    backend systems for booking creation and payment fraud detection, including
+    on-call ownership for critical systems.
+    \cvparagraph{
+    Later led Kiwi.com's first Go backend team in the Search tribe. Helped
+    migrate flight storage from Cassandra to ScyllaDB, a distributed database
+    deployment across three data centers with seven nodes each, handling around
+    700k writes and 500k reads per second.
+    }
+    \cvparagraph{
+    Read more:
+    \link{https://www.scylladb.com/users/case-study-kiwi-takes-flight-with-scylla/}
+      {ScyllaDB customer story}
+    }
+  }
+
+\cvjob
+    {Red Hat}
+    {April 2013 -- April 2016}
+    {Software Engineer}
+    {Brno, Czech Republic}
+  {
+    Worked on the user experience team maintaining CPython within Fedora and
+    RHEL. Helped drive the transition to Python 3 as the default in Fedora 23
+    and co-authored PEP 493, which provided HTTPS verification migration tools
+    for Python 2.7.
+  }
+
+\cvsection{Education}
+
+\cveducation
+    {Masaryk University}
+    {2013}
+    {Faculty of Informatics, BSc}
+    {Brno, Czech Republic}
+  {
+    Thesis: \textit{Methods of automatic testing in Python language}.
+    \cvparagraph{
+    The thesis covers testing in Python, usage examples for common freely
+    available test libraries, libraries for creating fake objects, and a
+    performance comparison of selected libraries applied to the MCC project.
+    }
+  }
+
+\cvsection{Talks}
+
+\cvtalk
+    {PyCon CZ: Bits and bytes of Python memory management}
+    {2018}
+    {\link{https://cz.pycon.org/2018/programme/detail/talk/12/}
+      {cz.pycon.org/2018/programme/detail/talk/12/}}
+
+\cvtalk
+    {PyCon CZ: Feed your code to coala}
+    {2016}
+    {\link{https://pyvideo.org/pycon-cz-2016/feed-your-code-to-coala.html}
+      {pyvideo.org/pycon-cz-2016/feed-your-code-to-coala.html}}
+
+\end{document}

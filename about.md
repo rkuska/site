@@ -6,6 +6,8 @@ Hey, I'm Robert. I'm a backend engineer. If you need help with backend work, ema
 
 Former [CPython maintainer in Fedora/RHEL](https://fedoraproject.org/wiki/Changes/Python_3_as_Default). Built [high-throughput systems for travel](https://www.scylladb.com/users/case-study-kiwi-takes-flight-with-scylla/), worked on [core banking at Qonto](https://qonto.com/en), and now improve [CRM systems at Apropos](http://apropos.com/).
 
+Read my full [CV]({{ '/cv/' | relative_url }}).
+
 <div class="quote-with-portrait">
   <img class="profile-picture" src="{{ site.profile-picture | relative_url }}" alt="">
   <blockquote>

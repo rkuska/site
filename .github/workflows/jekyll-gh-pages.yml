@@ -30,6 +30,18 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v4
+      - name: Build CV PDF
+        uses: xu-cheng/latex-action@v4
+        with:
+          working_directory: _cv
+          root_file: robert-kuska-cv.tex
+          latexmk_use_xelatex: true
+      - name: Render CV page from TeX
+        run: ruby scripts/render-cv-html.rb
+      - name: Copy CV PDF into site assets
+        run: |
+          mkdir -p assets/cv
+          cp _cv/robert-kuska-cv.pdf assets/cv/robert-kuska-cv.pdf
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:

@@ -21,6 +21,7 @@ exclude:
  - AGENTS.md
  - .DS_Store
  - about.md
+ - _cv
  - _archive
 
 navbar:
